@@ -15,7 +15,12 @@ const CollapseMenu = (props) => {
         }).interpolate(openValue => `translate3d(0, ${openValue}px, 0`),
       }}
       >
-
+        <NavLinks>
+          <li><a href="/" onClick={props.handleNavbar}>link n1</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>link n2</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>link n3</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>link n4</a></li>
+        </NavLinks>
       </CollapseWrapper>
     );
   }
