@@ -72,7 +72,7 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 2rem;;
   justify-content: space-between;
-  height: 5rem;
+  height: 7rem;
 `;
 
 const NavLinks = styled(animated.ul)`
