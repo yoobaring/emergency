@@ -16,10 +16,11 @@ const CollapseMenu = (props) => {
       }}
       >
         <NavLinks>
-          <li><a href="/" onClick={props.handleNavbar}>link n1</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>link n2</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>link n3</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>link n4</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>หน้าหลัก</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>แผนกฉุกเฉิน</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>ทีมแพทย์</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>นัดหมายแพทย์</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>ติดต่อเรา</a></li>
         </NavLinks>
       </CollapseWrapper>
     );

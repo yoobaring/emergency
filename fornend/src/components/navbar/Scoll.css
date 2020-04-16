@@ -8,7 +8,9 @@ nav a{
 
 	line-height: 65px;
 	position: relative;
-	z-index: 1;
+  z-index: 1;
+
+
 }
 nav .animation{
 	position: absolute;
@@ -17,7 +19,7 @@ nav .animation{
 	top: 0;
 	/* bottom: 0; */
 	z-index: 0;
-	background: #1abc9c;
+	background: #06add6;
 	border-radius: 18px;
 	transition: all .5s ease 0s;
 }
@@ -25,27 +27,34 @@ a:nth-child(1){
 	width: 100px;
 }
 nav .start-home,a:nth-child(1):hover~.animation{
-	width: 75px;
+	width: 85px;
 	left: 0;
 }
 a:nth-child(2){
 	width: 100px;
 }
 nav .start-about,a:nth-child(2):hover~.animation{
-	width: 75px;
+	width: 120px;
 	left: 80px;
 }
 a:nth-child(3){
 	width: 100px;
 }
 nav .start-blog,a:nth-child(3):hover~.animation{
-	width: 75px;
-	left: 175px;
+	width: 100px;
+	left: 190px;
 }
 a:nth-child(4){
 	width: 100px;
 }
 nav .start-portfolio,a:nth-child(4):hover~.animation{
-	width: 75px;
-	left: 265px;
+	width: 120px;
+	left: 289px;
+}
+a:nth-child(5){
+	width: 100px;
+}
+nav .start-portfolio,a:nth-child(5):hover~.animation{
+	width: 90px;
+	left: 407px;
 }

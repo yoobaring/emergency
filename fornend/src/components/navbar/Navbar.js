@@ -32,10 +32,11 @@ const Navbar = (props) => {
           <Brand />
           
           <NavLinks style={linkAnimation}>
-            <a href="/">Home</a>
-            <a href="/">link n2</a>
-            <a href="/">link n3</a>
-            <a href="/">link n4</a>
+            <a href="/">หน้าหลัก</a>
+            <a href="/">แผนกฉุกเฉิน</a>
+            <a href="/">ทีมแพทย์</a>
+            <a href="/">นัดหมายแพทย์</a>
+            <a href="/">ติดต่อเรา</a>
             <div class="animation start-home"></div>
           </NavLinks>
           <BurgerWrapper>
