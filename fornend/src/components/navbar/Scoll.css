@@ -18,7 +18,7 @@ nav .animation{
 	/* bottom: 0; */
 	z-index: 0;
 	background: #1abc9c;
-	border-radius: 8px;
+	border-radius: 18px;
 	transition: all .5s ease 0s;
 }
 a:nth-child(1){
