@@ -20,41 +20,41 @@ nav .animation{
 	/* bottom: 0; */
 	z-index: 0;
 	background: #06add6;
-	border-radius: 18px;
+	border-radius: 20px;
 	transition: all .3s ease 0s;
 }
 a:nth-child(1){
 	width: 100px;
 }
 nav .start-home,a:nth-child(1):hover~.animation{
-	width: 85px;
-	left: 0;
+	width: 100px;
+	left: 5px;
 }
 a:nth-child(2){
 	width: 100px;
 }
-nav .start-about,a:nth-child(2):hover~.animation{
+nav .start-department,a:nth-child(2):hover~.animation{
 	width: 120px;
-	left: 80px;
+	left: 115px;
 }
 a:nth-child(3){
 	width: 100px;
 }
-nav .start-blog,a:nth-child(3):hover~.animation{
+nav .start-team,a:nth-child(3):hover~.animation{
 	width: 100px;
-	left: 190px;
+	left: 240px;
 }
 a:nth-child(4){
 	width: 100px;
 }
-nav .start-portfolio,a:nth-child(4):hover~.animation{
+nav .start-engage,a:nth-child(4):hover~.animation{
 	width: 120px;
-	left: 289px;
+	left: 359px;
 }
 a:nth-child(5){
 	width: 100px;
 }
-nav .start-portfolio,a:nth-child(5):hover~.animation{
+nav .start-contact,a:nth-child(5):hover~.animation{
 	width: 90px;
-	left: 407px;
+	left: 500px;
 }
