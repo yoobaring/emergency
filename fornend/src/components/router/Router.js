@@ -4,7 +4,7 @@ import Contact from "../../components/page/Contact";
 import Department from "../../components/page/Department";
 import Engage from "../../components/page/Engage";
 import Team from "../../components/page/Team";
-
+import Login from "../../components/page/Login";
 import React from 'react';
 
 const Router = () => {
@@ -26,6 +26,9 @@ const Router = () => {
   </Route>
   <Route path='/Team'>
   <Team />
+  </Route>
+  <Route path='/Login'>
+  <Login />
   </Route>
 </BrowserRouter>
 </div>
