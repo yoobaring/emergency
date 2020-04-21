@@ -2,10 +2,16 @@
 import React from 'react'
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
+
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
 import './Scoll.css';
+import { FcBusinessman ,FcAssistant ,FcDataProtection,FcConferenceCall,FcDislike ,FcHome} from "react-icons/fc";
+
+
+
+
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
@@ -32,13 +38,19 @@ const Navbar = (props) => {
           <Brand />
           
           <NavLinks style={linkAnimation}>
-            <a href="/">หน้าหลัก</a>
-            <a href="/">แผนกฉุกเฉิน</a>
-            <a href="/">ทีมแพทย์</a>
-            <a href="/">นัดหมายแพทย์</a>
-            <a href="/">ติดต่อเรา</a>
+            
+            <a href="/"><FcHome size="20"/>หน้าหลัก</a>
+            <a href="/department"><FcDislike size="20"/>แผนกฉุกเฉิน</a>
+            <a href="/team"><FcConferenceCall size="20"/>ทีมแพทย์</a>
+            <a href="/engage"><FcDataProtection size="20"/>นัดหมายแพทย์</a>
+            <a href="/contact"><FcAssistant size="20"/>ติดต่อเรา</a>
+            <a href="/login"><FcBusinessman size="43" /></a>
+
+          
             <div class="animation start-home"></div>
+            
           </NavLinks>
+      
           <BurgerWrapper>
             <BurgerMenu
               navbarState={props.navbarState} 
@@ -51,6 +63,7 @@ const Navbar = (props) => {
         navbarState={props.navbarState} 
         handleNavbar={props.handleNavbar}
       />
+        
    </>
   )
 }

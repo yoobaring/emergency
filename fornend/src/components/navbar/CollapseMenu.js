@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FcBusinessman ,FcAssistant ,FcDataProtection,FcConferenceCall,FcDislike ,FcHome} from "react-icons/fc";
 
 import { useSpring, animated } from 'react-spring';
 
@@ -15,12 +16,15 @@ const CollapseMenu = (props) => {
         }).interpolate(openValue => `translate3d(0, ${openValue}px, 0`),
       }}
       >
+        <br></br><br></br><br></br>
         <NavLinks>
-          <li><a href="/" onClick={props.handleNavbar}>หน้าหลัก</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>แผนกฉุกเฉิน</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>ทีมแพทย์</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>นัดหมายแพทย์</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>ติดต่อเรา</a></li>
+          <b />
+          <li><a  href="/" onClick={props.handleNavbar}><FcHome size="30"/>หน้าหลัก</a></li><br></br>
+          <li><a href="/department" onClick={props.handleNavbar}><FcDislike size="30"/>แผนกฉุกเฉิน</a></li><br></br>
+          <li><a href="/team" onClick={props.handleNavbar}><FcConferenceCall size="30"/>ทีมแพทย์</a></li><br></br>
+          <li><a href="/engage" onClick={props.handleNavbar}><FcDataProtection size="30"/>นัดหมายแพทย์</a></li><br></br>
+          <li><a href="/contact" onClick={props.handleNavbar}><FcAssistant size="30"/>ติดต่อเรา</a></li><br></br>
+          <li><a href="/login" onClick={props.handleNavbar}><FcBusinessman size="30"/>Login</a></li>
         </NavLinks>
       </CollapseWrapper>
     );
