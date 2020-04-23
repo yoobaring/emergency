@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Mainnavbar from '../navbar/Mainnavbar';
-import Footer from '../Footer';
 const Error = () => {
 
     return(
@@ -13,7 +12,7 @@ const Error = () => {
             
         </div>
         <Mainnavbar/>
-        <Footer/>
+
         </div>
     )
 }
