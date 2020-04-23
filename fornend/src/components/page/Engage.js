@@ -1,9 +1,12 @@
 import React from 'react'
-import "./Style.css"
+import "./style.css"
+import Mainnavbar from '../navbar/Mainnavbar'
+import Footer from '../Footer'
 
 const Engage = () => {
 
     return(
+        <div>
         <div className="main-board">
             <h2>hello Engage</h2>
             <h2>hello Engage</h2>
@@ -24,6 +27,9 @@ const Engage = () => {
             <h2>hello Home</h2>
             <h2>hello Home</h2>
             <h2>hello Home</h2>
+        </div>
+        <Mainnavbar/>
+        <Footer/>
         </div>
     )
 }

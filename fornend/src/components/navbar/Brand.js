@@ -6,6 +6,8 @@ import logo from "../../assets/logo-min.png";
 const Brand = () => {
   return (
     <a href="../">< Image src={logo} alt="Company Logo"></Image></a>
+
+    
   )
 }
 

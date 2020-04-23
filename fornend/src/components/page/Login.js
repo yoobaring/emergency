@@ -1,10 +1,12 @@
 import React from 'react'
 import "./style.css"
+import Mainnavbar from '../navbar/Mainnavbar';
 
 
 const Login = () => {
 
     return(
+        <div>
         <div>
 
 
@@ -61,6 +63,8 @@ const Login = () => {
   </div>
   </div>
   {/* partial */}
+  <Mainnavbar/>
+  </div>
 </div>
     )
 }
