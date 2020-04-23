@@ -1,4 +1,4 @@
-import { Switch,BrowserRouter, Route} from "react-router-dom"
+import { Switch,BrowserRouter , Route} from "react-router-dom"
 import Home from "../../components/page/Home";
 import Contact from "../../components/page/Contact";
 import Department from "../../components/page/Department";
@@ -8,7 +8,7 @@ import Login from "../../components/page/Login";
 
 import React from 'react';
 import Ad from "../../admin/Admin";
-
+import Error from "../../components/page/Error";
 
 const Router = () => {
 
@@ -25,7 +25,7 @@ const Router = () => {
 <Route  path="/Engage" component={Engage} />
 <Route  path="/Team" component={Team} />
 <Route  path="/Login" component={Login} />
-
+<Route component={Error} />
 
 
 <Route
