@@ -1,0 +1,52 @@
+{
+  "_from": "aor-language-thai",
+  "_id": "aor-language-thai@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-vikNdscCtl0FEyB27MaMNAR5ApTfRCrws+HOnPpwXOkpngi5t+/XcCewUznPB/FQaqfqcpsMxAXco/jlakd/XQ==",
+  "_location": "/aor-language-thai",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "aor-language-thai",
+    "name": "aor-language-thai",
+    "escapedName": "aor-language-thai",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/aor-language-thai/-/aor-language-thai-1.0.0.tgz",
+  "_shasum": "286a62c6dcdd7cffb2ef6398963ecd372f2f0d19",
+  "_spec": "aor-language-thai",
+  "_where": "C:\\Users\\BKB\\Desktop\\MiniProject\\yoominiproject\\fornend\\myproject",
+  "author": {
+    "name": "Liverbool"
+  },
+  "bugs": {
+    "url": "https://github.com/liverbool/aor-language-thai/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "thai translations for admin-on-rest, the frontend framework for building admin applications on top of REST services",
+  "homepage": "https://github.com/liverbool/aor-language-thai#readme",
+  "keywords": [
+    "react",
+    "admin-on-rest",
+    "translation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "aor-language-thai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liverbool/aor-language-thai.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

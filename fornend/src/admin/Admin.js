@@ -1,5 +1,5 @@
 import React from 'react';
-import {Delete ,Admin, Resource,resolveBrowserLocale } from 'admin-on-rest';
+import {Delete ,Admin, Resource } from 'admin-on-rest';
 import loopbackRestClient from 'aor-loopback';
 import {nursesEdit ,nursesCreate, nursesList ,
         physicianEdit ,physicianCreate, physicianList ,
@@ -8,7 +8,7 @@ import {nursesEdit ,nursesCreate, nursesList ,
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-import thaiMessages from 'aor-language-thai';
+import thaiMessages from './aor-language-thai';
 
 const messages = {
     'th': thaiMessages,
