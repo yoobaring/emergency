@@ -1,5 +1,5 @@
 import React from 'react';
-import {Delete ,Admin, Resource } from 'admin-on-rest';
+import {Delete ,Admin, Resource,resolveBrowserLocale } from 'admin-on-rest';
 import loopbackRestClient from 'aor-loopback';
 import {nursesEdit ,nursesCreate, nursesList ,
         physicianEdit ,physicianCreate, physicianList ,
@@ -8,8 +8,16 @@ import {nursesEdit ,nursesCreate, nursesList ,
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
+import thaiMessages from 'aor-language-thai';
+
+const messages = {
+    'th': thaiMessages,
+};
+
+
+
 const Ad = () => (
-    <Admin theme={getMuiTheme(darkBaseTheme)} restClient={loopbackRestClient('http://localhost:3000/api/')}>
+    <Admin locale="th" messages={messages} theme={getMuiTheme(darkBaseTheme)} restClient={loopbackRestClient('http://localhost:3000/api/')}>
         <Resource name="nurses" list={nursesList} create={nursesCreate} edit={nursesEdit} remove={Delete}/>
         <Resource name="physicians" list={physicianList} create={physicianCreate} edit={physicianEdit} remove={Delete}/>
         <Resource name="adjutants" list={adjutantList} create={adjutantCreate} edit={adjutantEdit} remove={Delete} />

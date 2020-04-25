@@ -1,6 +1,6 @@
 import React from 'react';
-import {TabbedForm,FormTab,DisabledInput,DateInput,CheckboxGroupInput,RadioButtonGroupInput,NumberInput
-,EditButton,required,DateField ,Edit, Create, List, Datagrid, TextField,TextInput,DeleteButton,ImageInput,ImageField } from 'admin-on-rest';
+import {TabbedForm,FormTab,DisabledInput,DateInput,RadioButtonGroupInput,NumberInput
+,EditButton,required,DateField ,Edit, Create, List, Datagrid, TextField,TextInput,DeleteButton } from 'admin-on-rest';
 
 
 
