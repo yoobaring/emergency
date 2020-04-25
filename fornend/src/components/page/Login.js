@@ -1,6 +1,6 @@
 import React from 'react'
-import "./style.css"
 import Mainnavbar from '../navbar/Mainnavbar';
+import './Style.css'
 
 
 const Login = () => {

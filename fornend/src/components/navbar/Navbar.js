@@ -32,13 +32,15 @@ const Navbar = (props) => {
 
   return (
     <>
-    
-      <NavBar style={barAnimation}>
-        <FlexContainer>
+
+      <NavBar style={barAnimation} >
+        
+        <FlexContainer >
           <Brand />
           
           <NavLinks style={linkAnimation}>
-            
+         
+          
             <a href="/"><FcHome size="20"/>หน้าหลัก</a>
             <a href="/department"><FcDislike size="20"/>แผนกฉุกเฉิน</a>
             <a href="/team"><FcConferenceCall size="20"/>ทีมแพทย์</a>
@@ -63,8 +65,6 @@ const Navbar = (props) => {
         navbarState={props.navbarState} 
         handleNavbar={props.handleNavbar}
       />
-
-      
         
    </>
   )

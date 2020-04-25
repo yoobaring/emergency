@@ -25,20 +25,11 @@ const Router = () => {
 <Route  path="/Engage" component={Engage} />
 <Route  path="/Team" component={Team} />
 <Route  path="/Login" component={Login} />
-<Route component={Error} />
+<Route  path="/Admin" component={Ad} />
+<Route exact component={Error} />
 
 
-<Route
-    path="/Admin"
-    render={({ match: { url } }) => (
-      <>
-        <Route path={`${url}/`} component={Ad} exact />
-        {/* <Route path={`${url}/home`} component={Dashboard} />
-        <Route path={`${url}/users`} component={UserPage} /> */}
 
-      </>
-    )}
-  />
 </Switch>
 </BrowserRouter>
 </div>

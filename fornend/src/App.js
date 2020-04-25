@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import GlobalStyle from './styles/Global';
-
 import './App.css'
 import Router from './components/router/Router';
 
