@@ -35,7 +35,15 @@
     "dataSource": "emergency",
     "public": false
   },
-  "post": {
+  "nurse": {
+    "dataSource": "emergency",
+    "public": true
+  },
+  "physician": {
+    "dataSource": "emergency",
+    "public": true
+  },
+  "adjutant": {
     "dataSource": "emergency",
     "public": true
   }
