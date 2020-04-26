@@ -8,6 +8,8 @@ const Home = () => {
 
     return(
         <div>
+            <div className="a">
+        <div className="nav" > 
         <div className="main-board">
             <h2>hello Home</h2>
             <h2>hello Home</h2>
@@ -28,8 +30,12 @@ const Home = () => {
             <h2>hello Home</h2>
             <h2>hello Home</h2>
             <h2>hello Home</h2>
-        </div>
+       </div>
         <Mainnavbar/>
+        </div>
+        
+        </div  > 
+        
         <Footer/>
         </div>
     )

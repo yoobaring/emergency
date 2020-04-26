@@ -4,7 +4,13 @@ body {
 	background: #c6e0e4;
 }
 
-nav a{
+.ss {
+  padding: 6px;
+  left: 120px;
+
+}
+
+.nav a{
 
 	line-height: 65px;
 	position: relative;
@@ -12,7 +18,7 @@ nav a{
 
 
 }
-nav .animation{
+.nav .animation{
 	position: absolute;
 	height: 100%;
 	/* height: 5px; */
@@ -23,38 +29,38 @@ nav .animation{
 	border-radius: 20px;
 	transition: all .3s ease 0s;
 }
-a:nth-child(1){
+.a:nth-child(1){
 	width: 100px;
 }
-nav .start-home,a:nth-child(1):hover~.animation{
+.nav .start-home,a:nth-child(1):hover~.animation{
 	width: 100px;
-	left: 5px;
-}
-a:nth-child(2){
-	width: 100px;
-}
-nav .start-department,a:nth-child(2):hover~.animation{
-	width: 120px;
 	left: 115px;
 }
-a:nth-child(3){
+.a:nth-child(2){
 	width: 100px;
 }
-nav .start-team,a:nth-child(3):hover~.animation{
-	width: 100px;
-	left: 240px;
-}
-a:nth-child(4){
-	width: 100px;
-}
-nav .start-engage,a:nth-child(4):hover~.animation{
+.nav .start-department,a:nth-child(2):hover~.animation{
 	width: 120px;
-	left: 359px;
+	left: 213px;
 }
-a:nth-child(5){
+.a:nth-child(3){
 	width: 100px;
 }
-nav .start-contact,a:nth-child(5):hover~.animation{
+.nav .start-team,a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 327px;
+}
+.a:nth-child(4){
+	width: 100px;
+}
+.nav .start-engage,a:nth-child(4):hover~.animation{
+	width: 120px;
+	left: 430px;
+}
+.a:nth-child(5){
+	width: 100px;
+}
+.nav .start-contact,a:nth-child(5):hover~.animation{
 	width: 90px;
-	left: 500px;
+	left: 555px;
 }

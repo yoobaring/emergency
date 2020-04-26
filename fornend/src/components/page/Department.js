@@ -8,13 +8,17 @@ const Department = () => {
 
     return(
         <div>
-        
+        <div className="a">
+        <div className="nav" > 
         <div className="main-board">
             <h2>hello Department</h2>
-        </div>
+            </div>
         <Mainnavbar/>
+        </div>
+        
+        </div  > 
+        
         <Footer/>
-       
         </div>
     )
 }

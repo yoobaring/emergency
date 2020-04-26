@@ -7,6 +7,8 @@ const Team = () => {
 
     return(
         <div>
+            <div className="a">
+        <div className="nav" > 
         <div className="main-board">
             <h2>hello Team</h2>
             <h2>hello Team</h2>
@@ -67,6 +69,10 @@ const Team = () => {
             <h2>hello Home</h2>
         </div>
         <Mainnavbar/>
+        </div>
+        
+        </div  > 
+        
         <Footer/>
         </div>
     )

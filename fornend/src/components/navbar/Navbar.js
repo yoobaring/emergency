@@ -2,11 +2,11 @@
 import React from 'react'
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
-
+import './Scoll.css'
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
-import './Scoll.css';
+
 import { FcBusinessman ,FcAssistant ,FcDataProtection,FcConferenceCall,FcDislike ,FcHome} from "react-icons/fc";
 
 
@@ -32,21 +32,21 @@ const Navbar = (props) => {
 
   return (
     <>
-
+   
       <NavBar style={barAnimation} >
         
         <FlexContainer >
           <Brand />
           
-          <NavLinks style={linkAnimation}>
+          <NavLinks style={linkAnimation} >
          
           
-            <a href="/"><FcHome size="20"/>หน้าหลัก</a>
-            <a href="/department"><FcDislike size="20"/>แผนกฉุกเฉิน</a>
-            <a href="/team"><FcConferenceCall size="20"/>ทีมแพทย์</a>
-            <a href="/engage"><FcDataProtection size="20"/>นัดหมายแพทย์</a>
-            <a href="/contact"><FcAssistant size="20"/>ติดต่อเรา</a>
-            <a href="/login"><FcBusinessman size="43" /></a>
+            <a className='ss' href="/"><FcHome size="20"/>หน้าหลัก </a> 
+            <a className='ss' href="/department"><FcDislike size="20"/>แผนกฉุกเฉิน</a>
+            <a className='ss' href="/team"><FcConferenceCall size="20"/>ทีมแพทย์</a>
+            <a className='ss' href="/engage"><FcDataProtection size="20"/>นัดหมายแพทย์</a>
+            <a className='ss' href="/contact"><FcAssistant size="20"/>ติดต่อเรา</a>
+            <a className='ss' href="/login"><FcBusinessman size="43" /></a>
 
           
             <div class="animation start-home"></div>
@@ -86,7 +86,7 @@ const FlexContainer = styled.div`
   max-width: 120rem;
   display: flex;
   margin: auto;
-  padding: 0 2rem;;
+  padding: 0 2rem;
   justify-content: space-between;
   height: 7rem;
 `;
@@ -100,8 +100,8 @@ const NavLinks = styled(animated.ul)`
     color: #dfe6e9;
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 1px solid transparent;
-    margin: 0 1.5rem;
+    border-bottom: 50px solid transparent;
+    margin: 0 0.1rem;
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
@@ -109,9 +109,10 @@ const NavLinks = styled(animated.ul)`
     &:hover {
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
+      
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 78px) {
       display: none;
     }
   }

@@ -4,11 +4,12 @@ import Contact from "../../components/page/Contact";
 import Department from "../../components/page/Department";
 import Engage from "../../components/page/Engage";
 import Team from "../../components/page/Team";
-import Login from "../../components/page/Login";
+
 
 import React from 'react';
 import Ad from "../../admin/Admin";
 import Error from "../../components/page/Error";
+import Login from "../../login/Login";
 
 const Router = () => {
 
