@@ -2,31 +2,43 @@ import React from 'react';
 import Mainnavbar from '../components/navbar/Mainnavbar';
 import '../components/page/Style.css';
 
+import { connect } from 'react-redux';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 
-export default class Login extends React.Component {
+class Login extends React.Component {
   constructor(props) {
-    super(props);
+    super(props); 
     this.login=this.login.bind(this);
     this.state={
-      email:'',
-      password:''
+      email:"",
+      password:""
     }
   }
   login=()=>{
-    alert('Login สำเร็จแล้ว');
-    axios.post("http://localhost:3000/api/User/login",{email: this.state.email,password: this.state.password})
+    alert('กำลัง Login');
+    axios.post("https://apiminiyoo.herokuapp.com/api/Users/login/",{email: this.state.email,password: this.state.password})
     .catch((error)=>{
     alert('ป้อนอีเมล์หรือรหัสผ่านผิด โปรดพยายามลองใหม่อีกครั้ง');
-    this.props.history.push("/");
+    this.props.history.push("/login");
     })
     .then((response)=>{
       console.log(response);
+      this.props.history.push("/");
+      sessionStorage.setItem("login_email",this.state.email);
+      sessionStorage.setItem("login_access_token",response.data.id);
+      sessionStorage.setItem("login_created",response.data.created);
+      sessionStorage.setItem("login_userId",response.data.userId);
+      this.props.dispatch({
+        type:"login",
+        login_email: this.state.email
+      })
     })
   }
-    handleChange=(event)=>{
-      this.setState({[event.target.name]:event.target.value});
+  
+  handleChange=(event)=>{
+    console.log(event.target.name)
+    this.setState({[event.target.name]:event.target.value});
     }
 
   
@@ -52,7 +64,8 @@ export default class Login extends React.Component {
       <span className="spin" />
     </div>
     <div className="button login">
-      <button onClick={this.login} className="fa fa-check">Login</button>
+      {/* <div>{this.state.password}</div> */}
+      <button onClick={this.login} className="fa fa-check">ลงชื่อเข้าใช้</button>
     </div>
 
   </div>
@@ -71,14 +84,10 @@ export default class Login extends React.Component {
       <input type="password" name="regpass" id="regpass" />
       <span className="spin" />
     </div>
-    <div className="input">
-      <label htmlFor="reregpass">Repeat Password</label>
-      <input type="password" name="reregpass" id="reregpass" />
-      <span className="spin" />
-    </div>
+
     <div className="button">
       <button>
-        <span>NEXT</span>
+        <span>ลงชื่อเข้าใช้</span>
       </button>
     </div>
   </div>
@@ -88,5 +97,6 @@ export default class Login extends React.Component {
   <Mainnavbar/>
   </div>
   </div>
-    )}
+    );}
     }
+    export default connect()(Login);

@@ -4,12 +4,15 @@ import Contact from "../../components/page/Contact";
 import Department from "../../components/page/Department";
 import Engage from "../../components/page/Engage";
 import Team from "../../components/page/Team";
-
+import '../../components/page/Style.css';
 
 import React from 'react';
 import Ad from "../../admin/Admin";
 import Error from "../../components/page/Error";
 import Login from "../../login/Login";
+import Listname from "../../user/Listname";
+
+
 
 const Router = () => {
 
@@ -27,6 +30,7 @@ const Router = () => {
 <Route  path="/Team" component={Team} />
 <Route  path="/Login" component={Login} />
 <Route  path="/Admin" component={Ad} />
+<Route  path="/Listname" component={Listname} />
 <Route exact component={Error} />
 
 

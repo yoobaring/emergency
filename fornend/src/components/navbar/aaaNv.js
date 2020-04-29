@@ -45,12 +45,6 @@ class Navbar extends React.Component {
       isOpen: false,
       
     };
-  }
-    componentWillMount(){
-      this.props.dispatch({
-        type:"login",
-        login_email:sessionStorage.getItem("login_email")
-      })
     
   }
   
@@ -86,27 +80,15 @@ class Navbar extends React.Component {
           <Brand />
           
           <NavLinks  >
-
-                
+             
+                <a className='ss'><FcAssistant size="20"/> {this.props.loginData.login_email}</a>
                 <a className='ss' href="/"><FcHome size="20"/>หน้าหลัก </a> 
-                <a className='ss'> {this.props.loginData.login_email}</a>
-                { !this.props.loginData.login_email &&
                 <a className='ss' href="/department"><FcDislike size="20"/>แผนกฉุกเฉิน</a>
-                }
-                { !this.props.loginData.login_email &&
                 <a className='ss' href="/team"><FcConferenceCall size="20"/>ทีมแพทย์</a>
-                }
-                { !this.props.loginData.login_email &&
                 <a className='ss' href="/engage"><FcDataProtection size="20"/>นัดหมายแพทย์</a>
-                }
-                { !this.props.loginData.login_email &&
                 <a className='ss' href="/contact"><FcAssistant size="20"/>ติดต่อเรา</a>
-                }
                 { !this.props.loginData.login_email &&
-                <a className='ss' href="/login" >login</a>
-                }
-                { this.props.loginData.login_email &&
-                <a className='ss' href="/Listname"><FcAssistant size="20"/>ตรวจสอบ</a>
+                <a className='ss' href="/login"><FcAssistant size="20"/>login</a>
                 }
                 { this.props.loginData.login_email &&
                 <a onClick={this.logout}> logout </a>
@@ -114,7 +96,7 @@ class Navbar extends React.Component {
                 {/* <a className='ss' href="/login"><FcBusinessman size="43" /></a> */}
     
               
-            
+                <div class="animation start-home"></div>
                 
               </NavLinks>
           
@@ -146,7 +128,7 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: #ff9933  ;
+  background: crimson;
   z-index: 1;
   font-size: 1.4rem;
 
@@ -154,7 +136,7 @@ const NavBar = styled(animated.nav)`
 `;
 
 const FlexContainer = styled.div`
-  max-width: auto;
+  max-width: 120rem;
   display: flex;
   margin: auto;
   padding: 0 2rem;
@@ -168,7 +150,6 @@ const NavLinks = styled(animated.ul)`
   justify-self: end;
   list-style-type: none;
   margin: auto 0;
-  
 
   & a {
     color: #dfe6e9;

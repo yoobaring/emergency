@@ -2,10 +2,12 @@ import React from 'react'
 import '../../components/navbar/Scoll.css';
 import Mainnavbar from '../../components/navbar/Mainnavbar';
 import Footer from '../Footer';
+
 const Contact = () => {
 
     return(
         <div>
+        
         <div className="a">
         <div className="nav" > 
         <div className="main-board">
@@ -66,6 +68,7 @@ const Contact = () => {
         
         <Footer/>
         </div>
+       
     )
 }
 export default Contact;

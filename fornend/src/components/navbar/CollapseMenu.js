@@ -40,8 +40,6 @@ const CollapseWrapper = styled(animated.div)`
   top: 4.5rem;
   left: 0;
   right: 0;
-  
-
 `;
 
 const NavLinks = styled.ul`
@@ -59,7 +57,7 @@ const NavLinks = styled.ul`
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    
+    margin: 10;
 
     &:hover {
       color: #fdcb6e;

@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: #c6e0e4;
+  background: #c6e0e4;
+  
 }
 
 .ss {
-  padding: 6px;
-  left: 120px;
+  padding: 8px;
+  font-size: 1.6rem;
+
 
 }
 
+.sb {
+  padding: 128px;
+  font-size: 1s.6rem;
+  background: #a6df0b;
+  position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+
+	border-radius: 25px;
+	transition: all .3s ease 0s;
+
+}
 .nav a{
 
 	line-height: 65px;
@@ -17,7 +33,10 @@ body {
   z-index: 1;
 
 
+
 }
+
+
 .nav .animation{
 	position: absolute;
 	height: 100%;
@@ -26,7 +45,7 @@ body {
 	/* bottom: 0; */
 	z-index: 0;
 	background: #06add6;
-	border-radius: 20px;
+	border-radius: 25px;
 	transition: all .3s ease 0s;
 }
 .a:nth-child(1){
@@ -34,33 +53,49 @@ body {
 }
 .nav .start-home,a:nth-child(1):hover~.animation{
 	width: 100px;
-	left: 115px;
+	left: 895px;
 }
 .a:nth-child(2){
 	width: 100px;
 }
 .nav .start-department,a:nth-child(2):hover~.animation{
-	width: 120px;
-	left: 213px;
+	width: 100px;
+	left: 897px;
 }
 .a:nth-child(3){
 	width: 100px;
 }
 .nav .start-team,a:nth-child(3):hover~.animation{
 	width: 100px;
-	left: 327px;
+	left: 1000px;
 }
 .a:nth-child(4){
 	width: 100px;
 }
 .nav .start-engage,a:nth-child(4):hover~.animation{
-	width: 120px;
-	left: 430px;
+	width: 100px;
+	left: 1110px;
 }
 .a:nth-child(5){
 	width: 100px;
 }
 .nav .start-contact,a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 1215px;
+}
+
+.a:nth-child(6){
+	width: 100px;
+}
+.nav .start-contact,a:nth-child(6):hover~.animation{
 	width: 90px;
-	left: 555px;
+	left: 1340px;
+}
+
+.a:nth-child(7){
+	width: 100px;
+}
+.nav .start-contact,a:nth-child(7):hover~.animation{
+	width: 77px;
+	left: 1430px;
 }
