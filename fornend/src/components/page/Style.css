@@ -12,6 +12,38 @@
 }
 
 
+.Ho{
+ padding-top: auto;
+  position: auto;
+  bottom: auto;
+  margin:auto;
+  width: 100%;
+  padding:auto;
+  position: fixed;
+  font-size:20px;
+  top: 15%;
+  opacity: .8;
+  z-index: -1;
+  border-radius: 10px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  content: "";
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  position: absolute;
+;
+  background: rgba(255, 255, 255, 0.6);
+  left: 0;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.95);
+  z-index: -1;
+  
+}
+
+
 
 /*-----------------------Style Login-----------------------*/
 .box {

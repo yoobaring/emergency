@@ -7,14 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { connect } from 'react-redux';
 // import { compose } from 'recompose';
 // import { Table } from 'reactstrap';
-import React, { Component,useState } from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import React, { useState } from 'react';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Listnamesub from './Listnamesub';
 import Leave from '../user/Leave';
 import SearchtListname from '../user/Searchlistname'
 import Footer from '../components/Footer';
 import Mainnavbar from '../components/navbar/Mainnavbar';
+
 
 
 const Listname = (props) => {

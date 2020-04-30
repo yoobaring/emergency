@@ -1,6 +1,6 @@
 import React from 'react';
-import {Filter,TabbedForm,FormTab,DisabledInput,DateInput,RadioButtonGroupInput,NumberInput
-,EditButton,required,DateField ,Edit, Create, List, Datagrid, TextField,TextInput,DeleteButton } from 'admin-on-rest';
+import {Filter,TabbedForm,FormTab,DateInput,NumberInput
+,required,DateField , Create, List, Datagrid, TextField,TextInput } from 'admin-on-rest';
 
 
 
@@ -22,7 +22,7 @@ export const ListnametList = (props) => (
             <TextField source="phone" label="เบอร์ "/>
             <DateField source="date" label="วันที่ "/>
             <TextField source="time" label="เวลา "/>
-            <TextField source="lgtext" label="ข้อความลา "/>
+            <TextField source="lgtext" label="เหตุผลที่ลา "/>
            
 
 
@@ -38,7 +38,8 @@ export const ListnameCreate = (props) => (
             <TextInput source="firstname" label="ชื่อ "style={{display: 'inline-block',marginRight:32}} validate={[required]}/><br/>
             <TextInput source="surname" label="นามสกุล " style={{display: 'inline-block',marginRight:32}} validate={[required]}/>
             <TextInput source="phone" label="เบอร์ " style={{display: 'inline-block',marginRight:32}}/><br/>
-            <NumberInput  source="time" label="เวลา " style={{display: 'inline-block',marginRight:32}} />
+            <TextInput  source="time" label="เวลา " style={{display: 'inline-block',marginRight:32}} />
+            <TextInput  source="lgtext" label="เหตุผลที่ลา " style={{display: 'inline-block',marginRight:32}} />
             <DateInput 
                 source="date" label="วันที่ " style={{display: 'inline-block',marginRight:32}} validate={[required]}
                 options={{
@@ -48,7 +49,7 @@ export const ListnameCreate = (props) => (
                 }}
                 />
                
-               
+                 
                 
                     </FormTab>
                    

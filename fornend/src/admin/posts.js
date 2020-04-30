@@ -264,6 +264,50 @@ export const adjutantEdit = (props) => (
 
 
 
+
+//////////////////publish////////////////
+
+
+
+export const publishesList = (props) => (
+    <List {...props} filters={<PostFilter />}>
+        <Datagrid>
+            <TextField source="id" />
+            <TextField source="title" label="หัวเรื่อง "/>
+            <TextField source="subject" label="ข้อความประกาศ "/>  
+            <EditButton/>
+            <DeleteButton/>
+            
+        </Datagrid>
+    </List>
+);
+
+    export const publishesCreate = (props) => (
+        <Create {...props}>
+            <TabbedForm>
+                <FormTab label="ข้อมูลทั่วไป" >
+                <TextInput source="title" label="หัวเรื่อง "style={{display: 'inline-block',marginRight:32}} validate={[required]}/><br/>
+                <TextInput source="subject" label="ข้อความประกาศ " style={{display: 'inline-block',marginRight:32}} validate={[required]}/>
+                    
+                        </FormTab>
+                       
+            </TabbedForm>
+        </Create>
+    );
+    
+    export const publishesEdit = (props) => (
+        <Edit {...props}>
+            
+            <TabbedForm>
+            <FormTab label="ข้อมูลทั่วไป" >
+                <TextInput source="title" label="หัวเรื่อง "style={{display: 'inline-block',marginRight:32}} validate={[required]}/><br/>
+                <TextInput source="subject" label="ข้อความประกาศ " style={{display: 'inline-block',marginRight:32}} validate={[required]}/>
+                    
+                        </FormTab>
+            </TabbedForm>
+        </Edit>
+    );
+    
 //////////////////Users////////////////
 
 
@@ -341,3 +385,37 @@ export const userEdit = (props) => (
     
 );
 
+
+
+
+//////////////////listnames////////////////
+
+
+
+export const listnamesList = (props) => (
+    <List {...props} filters={<PostFilter />}>
+        <Datagrid>
+            <TextField source="id" />
+            <TextField source="title" label="หัวเรื่อง "/>
+            <TextField source="subject" label="ข้อความประกาศ "/>  
+            <EditButton/>
+            <DeleteButton/>
+            
+        </Datagrid>
+    </List>
+);
+
+   
+    
+    export const listnamesEdit = (props) => (
+        <Edit {...props}>
+            
+            <TabbedForm>
+            <FormTab label="ข้อมูลทั่วไป" >
+                <TextInput source="title" label="หัวเรื่อง "style={{display: 'inline-block',marginRight:32}} validate={[required]}/><br/>
+                <TextInput source="subject" label="ข้อความประกาศ " style={{display: 'inline-block',marginRight:32}} validate={[required]}/>
+                    
+                        </FormTab>
+            </TabbedForm>
+        </Edit>
+    );

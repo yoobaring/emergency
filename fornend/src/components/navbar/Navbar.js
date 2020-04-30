@@ -1,12 +1,12 @@
 //dropdown on mobile
 import React from 'react'
 import styled from "styled-components";
-import { useSpring, animated, config } from "react-spring";
+import { animated } from "react-spring";
 import './Scoll.css'
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
-import { FcBusinessman ,FcAssistant ,FcDataProtection,FcConferenceCall,FcDislike ,FcHome} from "react-icons/fc";
+import { FcAssistant ,FcDataProtection,FcConferenceCall,FcDislike ,FcHome} from "react-icons/fc";
 import { connect } from 'react-redux';
 
 
@@ -75,6 +75,7 @@ class Navbar extends React.Component {
     }
     
     
+    
     render(){
       
       return (
@@ -87,31 +88,23 @@ class Navbar extends React.Component {
           
           <NavLinks  >
 
+        
+                <a className='ss' href="/"><FcHome size="20"/>ประกาศ </a> 
                 
-                <a className='ss' href="/"><FcHome size="20"/>หน้าหลัก </a> 
-                <a className='ss'> {this.props.loginData.login_email}</a>
-                { !this.props.loginData.login_email &&
-                <a className='ss' href="/department"><FcDislike size="20"/>แผนกฉุกเฉิน</a>
+                
+        
+                { this.props.loginData.login_email &&
+                <a className='ss' href="/Listname"><FcDataProtection size="20"/>ตารางเวร</a>
                 }
-                { !this.props.loginData.login_email &&
-                <a className='ss' href="/team"><FcConferenceCall size="20"/>ทีมแพทย์</a>
-                }
-                { !this.props.loginData.login_email &&
-                <a className='ss' href="/engage"><FcDataProtection size="20"/>นัดหมายแพทย์</a>
-                }
-                { !this.props.loginData.login_email &&
-                <a className='ss' href="/contact"><FcAssistant size="20"/>ติดต่อเรา</a>
-                }
+              
                 { !this.props.loginData.login_email &&
                 <a className='ss' href="/login" >login</a>
                 }
                 { this.props.loginData.login_email &&
-                <a className='ss' href="/Listname"><FcAssistant size="20"/>ตรวจสอบ</a>
-                }
-                { this.props.loginData.login_email &&
-                <a onClick={this.logout}> logout </a>
+                <a onClick={this.logout} >  logout </a>
                 }
                 {/* <a className='ss' href="/login"><FcBusinessman size="43" /></a> */}
+                <div className='so'><br></br> {this.props.loginData.login_email}</div>
     
               
             
@@ -123,8 +116,9 @@ class Navbar extends React.Component {
                   navbarState={this.props.navbarState} 
                   handleNavbar={this.props.handleNavbar}
                 />
+                
               </BurgerWrapper>
-            </FlexContainer>
+            </FlexContainer >
           </NavBar>
           <CollapseMenu 
             navbarState={this.props.navbarState} 

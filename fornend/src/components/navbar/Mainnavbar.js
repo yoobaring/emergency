@@ -17,6 +17,8 @@ class Mainnavbar extends Component {
     
         <div className="page-container">
         <div className="content-wrap">
+        
+      
         <Navbar 
           navbarState={this.state.navbarOpen} 
           handleNavbar={this.handleNavbar}

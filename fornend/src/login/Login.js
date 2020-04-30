@@ -4,7 +4,7 @@ import '../components/page/Style.css';
 
 import { connect } from 'react-redux';
 import axios from 'axios';
-import { Redirect } from 'react-router-dom';
+
 
 class Login extends React.Component {
   constructor(props) {
@@ -63,33 +63,33 @@ class Login extends React.Component {
       <input type="password" name="password" id="pass" value={this.state.password} onChange={this.handleChange} />
       <span className="spin" />
     </div>
-    <div className="button login">
+    <div className="button" >
       {/* <div>{this.state.password}</div> */}
       <button onClick={this.login} className="fa fa-check">ลงชื่อเข้าใช้</button>
     </div>
 
   </div>
+  <div className="button">
+      <button>
+      <button  className="fa fa-check">เข้าระบบ ADMIN</button>
+      </button>
+    </div>
   <div className="overbox">
     <div className="material-button alt-2">
       <span className="shape" />
     </div>
-    <div className="title">REGISTER</div>
+    <div className="title">รหัสทดลองเข้าใช้</div>
     <div className="input">
-      <label htmlFor="regname">Username</label>
-      <input type="text" name="regname" id="regname" />
+    <center><label htmlFor="regname">demo@gmail.com</label></center>
+   
       <span className="spin" />
     </div>
     <div className="input">
-      <label htmlFor="regpass">Password</label>
-      <input type="password" name="regpass" id="regpass" />
+      <center><label htmlFor="regpass">demo</label></center>
+
       <span className="spin" />
     </div>
 
-    <div className="button">
-      <button>
-        <span>ลงชื่อเข้าใช้</span>
-      </button>
-    </div>
   </div>
   </div>
   </div>

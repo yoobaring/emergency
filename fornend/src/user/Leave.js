@@ -1,5 +1,5 @@
 import React from 'react';
-import {Delete ,Admin, Resource } from 'admin-on-rest';
+import { Admin, Resource } from 'admin-on-rest';
 import loopbackRestClient from 'aor-loopback';
 import { ListnameCreate, ListnametList } from './posts';
 
